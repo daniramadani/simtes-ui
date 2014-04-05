@@ -34,7 +34,7 @@ body {
 }
 
 .navbar-brand span {
-    color: #0099e8;
+    color: #29166f;
 }
 
 header .navbar-space {
@@ -96,9 +96,8 @@ header .navbar-space {
 }
 
 #banner {
-    /*background: url(../img/base/header.png) no-repeat center center;*/
-    /*background-size: cover;*/
-    /*text-align: center;*/
+    background: url(../img/base/header.png) no-repeat;
+    background-size: cover;
     background-color: #dddddd;
 }
 
@@ -106,8 +105,7 @@ div#search {
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    padding-top: 15%;
-    padding-bottom: 20%;
+    padding-top: 20%;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -142,7 +140,7 @@ button.rounded {
 @media (max-width: 768px) {
     .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
         display: block;
-        background-color: #f3f3f3;
+        background-color: #e1e1e1;
     }
 
     .navbar-brand,
@@ -152,7 +150,6 @@ button.rounded {
     }
 
     section#banner {
-        background-color: #dddddd;
         height: 250px;
     }
 
@@ -172,11 +169,10 @@ button.rounded {
     }
 
     .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-        border-bottom: 3px solid #1c1c1c;
+        border-bottom: 3px solid #29166f;
     }
 
     section#banner {
-        background-color: #dddddd;
         height: 340px;
     }
 
@@ -197,11 +193,10 @@ button.rounded {
     }
 
     .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-        border-bottom: 3px solid #1c1c1c;
+        border-bottom: 3px solid #29166f;
     }
 
     section#banner {
-        background-color: #dddddd;
         height: 340px;
     }
 
@@ -211,6 +206,6 @@ button.rounded {
 }
 
 footer {
-    background-color: #2d2d2d;
+    background-color: #1c1c1c;
     height: 100px;
 }
