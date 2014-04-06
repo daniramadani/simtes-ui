@@ -1,12 +1,11 @@
 /*
 created by ramadani (email.ramadani@gmail.com | @ramadani_id)
-for my undergraduate thesis at islamic university of indonesia
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 
 body {
-    background-color: #ecedee;
+    background-color: #e2e3e5;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -35,7 +34,7 @@ body {
 }
 
 .navbar-brand span {
-    color: #056fdb;
+    color: #2957a4;
 }
 
 header .navbar-space {
@@ -59,10 +58,6 @@ header .navbar-space {
     padding: 18px 8px 18px 8px;
     margin: 3px;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
 }
 
 .navbar-default .navbar-nav > li > a i {
@@ -99,7 +94,21 @@ header .navbar-space {
 #banner {
     /*background: url(../img/base/header.png) no-repeat;*/
     /*background-size: cover;*/
-    background-color: #dddddd;
+    background-color: #fecb31;
+}
+
+div#login-user {
+    background-color: #565d67;
+    padding: 20px 20px;
+}
+
+div#login-user h4 {
+    color: #cdcdcd;
+    font-weight: 400;
+}
+
+div#login-user a {
+    color: #ffffff;
 }
 
 div#search {
@@ -111,17 +120,15 @@ div#search {
     padding-right: 20px;
 }
 
+input.login-user, button.login-user {
+    border-radius: 0px;
+}
+
 input.rounded {
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    border-top: 2px solid #2d2d2d;
-    border-bottom: 2px solid #2d2d2d;
-    border-left: 2px solid #2d2d2d;
-    border-right-style: none;
-    padding-left: 20px;
-    outline: 0;
-    -webkit-appearance: none;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    /*border: 2px solid #056FDB;*/
 }
 
 button.rounded {
@@ -139,6 +146,10 @@ button.rounded {
 }
 
 @media (max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+
     .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
         display: block;
         background-color: #e1e1e1;
@@ -150,14 +161,34 @@ button.rounded {
         padding: 18px 10px 10px 12px;
     }
 
-    section#banner {
-        height: 250px;
+    .search-top {
+        margin: 5px 0px 10px 0px;
+        width: 100%;
+        border: 1px solid #eaeaea;
+        box-shadow: none;
+        background: url("../img/base/search-icon.jpg") no-repeat 10px 8px;
+        padding: 0 5px 0 35px;
+        color: #1c1c1c;
     }
 
-    section#content {
+    .search-top:focus {
+        border: 1px solid #eaeaea;
+        box-shadow: none;
+    }
+
+    div#content {
         padding: 10px;
     }
 
+    div#banner {
+        height: 250px;
+    }
+
+    .navbar-simtes {
+        margin-top: 0px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -165,21 +196,58 @@ button.rounded {
         width: 100%;
     }
 
+    .navbar-simtes {
+        margin-top: 20px;
+        /*margin-right: -15px;*/
+        /*margin-left: -15px;*/
+    }
+
     .navbar-default .navbar-nav {
         height: 62px;
     }
 
     .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-        color: #056fdb;
-        border-bottom: 3px solid #056fdb;
+        color: #2957a4;
+        border-bottom: 3px solid #2957a4;
     }
 
-    section#banner {
+    div#banner {
         height: 340px;
     }
 
-    section#content {
+    div#content {
         padding: 20px;
+    }
+
+    .search-top {
+        margin-top: 14px;
+        width: 20px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        border: 1px solid #fff;
+        box-shadow: none;
+        background: url("../img/base/search-icon.jpg") no-repeat 10px 8px;
+        padding: 0 5px 0 35px;
+        color: #fff;
+    }
+
+    .search-top:focus {
+        margin-top: 14px;
+        width: 180px;
+        border: 1px solid #eaeaea;
+        border-radius: 0px;
+        box-shadow: none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        color: #1c1c1c;
+        font-weight: 300;
+        margin-left: 10px;
     }
 }
 
@@ -189,26 +257,51 @@ button.rounded {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
-    .navbar-default .navbar-nav {
-        height: 62px;
-    }
-
-    .navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-        color: #056fdb;
-        border-bottom: 3px solid #056fdb;
-    }
-
-    section#banner {
-        height: 340px;
-    }
-
-    section#content {
-        padding: 20px;
-    }
 }
 
 footer {
     background-color: #1c1c1c;
     height: 100px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #2957a4;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+
+.nav-pills > li > a {
+    border-radius: 0px;
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.nav-stacked > li + li {
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.nav-stacked .title-menu {
+    padding: 12px 15px;
+    display: block;
+    color: #ffffff;
+    background-color: #2957a4;
+    border-right: 4px solid #fecb31;
+}
+
+.nav-stacked li a.active {
+    display: block;
+    color: #2957a4;
+    background-color: #edeef1;
 }
