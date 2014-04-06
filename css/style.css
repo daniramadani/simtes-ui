@@ -184,7 +184,7 @@ button.rounded {
         height: 250px;
     }
 
-    .navbar-simtes {
+    .navbar-simtes, #login-user {
         margin-top: 0px;
         margin-right: -15px;
         margin-left: -15px;
@@ -196,10 +196,9 @@ button.rounded {
         width: 100%;
     }
 
-    .navbar-simtes {
-        margin-top: 20px;
-        /*margin-right: -15px;*/
-        /*margin-left: -15px;*/
+    .navbar-simtes, #login-user {
+        margin-right: -15px;
+        margin-left: -15px;
     }
 
     .navbar-default .navbar-nav {
@@ -275,16 +274,9 @@ footer {
 
 .nav-pills > li > a {
     border-radius: 0px;
-}
-
-a {
     color: #1c1c1c;
     text-decoration: none;
-}
-
-a:hover {
-    color: #1c1c1c;
-    text-decoration: none;
+    margin-left: 3px;
 }
 
 .nav-stacked > li + li {
@@ -297,11 +289,13 @@ a:hover {
     display: block;
     color: #ffffff;
     background-color: #2957a4;
-    border-right: 4px solid #fecb31;
+    border-left: 3px solid #fecb31;
 }
 
-.nav-stacked li a.active {
+.nav-stacked li a.active,.nav-stacked li a:hover {
+    margin-left: 0px;
     display: block;
     color: #2957a4;
     background-color: #edeef1;
+    border-left: 3px solid #fecb31;
 }
